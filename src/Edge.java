@@ -35,7 +35,8 @@ public class Edge {
 		return false;
 	}
 	//print the edge
+	@Override 
 	public String toString() {
-		return("Between vertex:"+v1.getId()+"and vertex:"+v2.getId());
+		return(v1.getId()+"-"+v2.getId());
 	}
 }
