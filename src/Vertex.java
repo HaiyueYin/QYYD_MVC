@@ -13,7 +13,7 @@ public class Vertex {
 	
 	public Vertex(int id,List<Vertex> adj) {
 		this.myId = id;
-		
+		this.adjacentVertex = adj;//copy in the adjacentVertex as well
 	}
 	
 	public List<Vertex> getAdjList(){
