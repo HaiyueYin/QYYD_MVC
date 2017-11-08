@@ -7,7 +7,7 @@ public class Solver {
 	
 	public static void main(String[] args) {
 		Graph g = parseFile(args[0]);
-		//System.out.println(g.getVertex(1).toString());
+		System.out.println(g.getVertex(12).toString());
 		//System.out.println(g.getVertex(5).toString());
 		
 	}
@@ -29,12 +29,15 @@ public class Solver {
 			Vertex currentVertex = g.getVertex(currentIndex);
 			List<Vertex> currentAdjList = currentVertex.getAdjList();
 			String line = sc.nextLine();
-			String[] vertexs = line.trim().split("\\s+");
-			for(String adjVertex:vertexs) {
-				currentAdjList.add(g.getVertex(Integer.parseInt(adjVertex)));
+			if(!line.isEmpty()){//check if this line is empty
+				String[] vertexs = line.trim().split("\\s+");
+				for(String adjVertex:vertexs) {
+					currentAdjList.add(g.getVertex(Integer.parseInt(adjVertex)));
+				}
+				currentIndex++;
 			}
-			currentIndex++;
+				if(currentIndex==size+1) break;
+			}
+			return g;
 		}
-		return g;
 	}
-}
