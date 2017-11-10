@@ -23,14 +23,20 @@ public class Edge {
 	}
 	//check if edge contains vertex i directly
 	public boolean contains(int i) {
-		if(v1.getId()==i||v2.getId()==i) {
+		if(this.v1.getId()==i||this.v2.getId()==i) {
 			return true;
 		}
 		return false;
 	}
 	//check if two edges are equal
 	public boolean equals(Edge e) {
-		if((this.v1.equals((Vertex)e.v1)&&this.v2.equals((Vertex)e.v2))||(this.v1.equals((Vertex)e.v2)&&this.v2.equals((Vertex)e.v1)))
+		if(this == e)
+			return true;
+		else if (e == null)
+			return false;
+		else if(
+			(this.v1.equals((Vertex)e.v1)&&this.v2.equals((Vertex)e.v2))||
+			(this.v1.equals((Vertex)e.v2)&&this.v2.equals((Vertex)e.v1)))
 			return true;
 		return false;
 	}

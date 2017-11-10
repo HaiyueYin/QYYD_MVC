@@ -33,7 +33,7 @@ public class Solver {
 		while(sc.hasNextLine()) {
 			Vertex currentVertex = g.getVertex(currentVertexIndex);
 			List<Vertex> currentAdjList = currentVertex.getAdjList();
-			HashSet<Edge> currentEdge = g.EdgeList;
+			List<Edge> currentEdge = g.EdgeList;
 			String line = sc.nextLine();
 			if(!line.isEmpty()){//check if this line is empty
 				String[] vertexs = line.trim().split("\\s+");

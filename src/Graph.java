@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 public class Graph {
 	public List<Vertex> VertexList;
-	public HashSet<Edge> EdgeList;
+	public ArrayList<Edge> EdgeList;
 	int vertexSize, edgeSize;
 	//maybe another boolean array to denote visited
 	//add data structure as you need
@@ -14,14 +14,14 @@ public class Graph {
 		for(int i = 0;i<initVertexSize+1;i++) {
 			VertexList.add(new Vertex(i));
 		}
-		EdgeList = new HashSet<Edge>(initEdgeSize);
+		EdgeList = new ArrayList<Edge>(initEdgeSize+1);
 		this.vertexSize = initVertexSize;
 		this.edgeSize = initEdgeSize;
 	}
 	
 	public Graph() {
 		VertexList = new ArrayList<>();
-		EdgeList = new HashSet<Edge>();
+		EdgeList = new ArrayList<Edge>();
 	}
 	
 	public int vertexSize() {
