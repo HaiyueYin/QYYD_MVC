@@ -13,6 +13,7 @@ public class Solver {
 		Graph g = parseFile(args[0]);
 		System.out.println(g.getVertex(1).toString());
 		System.out.println(g.getVertex(5).toString());
+
 		
 	}
 	
@@ -64,4 +65,3 @@ public class Solver {
 		}
 		return g;	
 	}
-}

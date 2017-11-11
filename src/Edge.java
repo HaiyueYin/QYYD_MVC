@@ -34,14 +34,14 @@ public class Edge {
 	}
 	//check if edge contains vertex i directly
 	public boolean contains(int i) {
-		if(v1.getId()==i||v2.getId()==i) {
+		if(this.v1.getId()==i||this.v2.getId()==i) {
 			return true;
 		}
 		return false;
 	}
 	//check if two edges are equal
-	public boolean equals(Edge e) {
-		if(this==e)
+	public boolean equals(Edge e) {=
+		if(this==e)=
 			return true;
 		if(this.id == e.id) {
 			return true;
@@ -49,7 +49,8 @@ public class Edge {
 		return false;
 	}
 	//print the edge
-	public String toString() {
-		return("Between vertex: "+v1.getId()+" and vertex: "+v2.getId());
+	@Override 
+	public String toString() {=
+		return("Between vertex: "+v1.getId()+" and vertex: "+v2.getId());=
 	}
 }
