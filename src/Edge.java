@@ -3,7 +3,7 @@ public class Edge {
 	
 	private Vertex v1;
 	private Vertex v2;
-	private int id;
+	public int id;
 	public boolean covered;
 	//edge constructor by vertex
 	public Edge(Vertex v1, Vertex v2) {
@@ -34,7 +34,7 @@ public class Edge {
 	}
 	//check if edge contains vertex i directly
 	public boolean contains(int i) {
-		if(v1.getId()==i||v2.getId()==i) {
+		if(this.v1.getId()==i||this.v2.getId()==i) {
 			return true;
 		}
 		return false;
@@ -48,7 +48,18 @@ public class Edge {
 		}
 		return false;
 	}
+	//given a vertex find another
+	public Vertex getAnother(Vertex v){
+		if(contains(v)){
+			if(this.v1==v) 
+				return this.v2;
+			else 
+				return this.v1;
+		}
+		return null;
+	}
 	//print the edge
+	@Override 
 	public String toString() {
 		return("Between vertex: "+v1.getId()+" and vertex: "+v2.getId());
 	}

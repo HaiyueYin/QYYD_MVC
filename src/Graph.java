@@ -19,6 +19,7 @@ public class Graph {
 	 		for(int i = 0;i<initSize+1;i++) {
 	 			vertexList.add(new Vertex(i));
 	 		}
+	 		vertexCovered = new boolean[initSize+1];
 	 		//don't initialize Edge here because we can initialize with a initial size later.
 	 		
 	 	}

@@ -1,6 +1,7 @@
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
@@ -17,7 +18,6 @@ public class Solver {
 	
 	
 	public static void main(String[] args) {
-		
 		//CLi Definition Stage
 		Options options = new Options();
 		options.addOption("inst",true,"define the graph file to run algorithm");
@@ -46,8 +46,15 @@ public class Solver {
 		 
 		//add test code here to run different algorithm
 		Graph g = parseFile(file);
-		System.out.println(g.getVertex(1).toString());
-		System.out.println(g.getVertex(5).toString());
+		Collections.sort(g.vertexList);
+//		System.out.println(g.getVertex(1).toString());
+//		System.out.println(g.getVertex(2).toString());
+
+		BnB BnBsolve = new BnB(600,g);
+		
+		BnBsolve.DFS(-1);
+		System.out.println("we find the optimal solution!");
+		System.out.println(BnBsolve.optimalSolution.size());
 		
 	}
 	
