@@ -1,52 +1,101 @@
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
-import org.apache.commons.cli.CommandLine;
-import org.apache.commons.cli.CommandLineParser;
-import org.apache.commons.cli.DefaultParser;
-import org.apache.commons.cli.Options;
-import org.apache.commons.cli.ParseException;
+//import org.apache.commons.cli.CommandLine;
+//import org.apache.commons.cli.CommandLineParser;
+//import org.apache.commons.cli.DefaultParser;
+//import org.apache.commons.cli.Options;
+//import org.apache.commons.cli.ParseException;
 
 
 public class Solver {
 	
-	
-	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
 		//CLi Definition Stage
-		Options options = new Options();
-		options.addOption("inst",true,"define the graph file to run algorithm");
-		options.addOption("alg",true,"define the algorithm to solve problem");
-		options.addOption("time",true,"cutoff time in seconds");
-		options.addOption("seed",true,"random seed");
-		
-		//CLi Parse Stage
-		CommandLineParser parser = new DefaultParser();
-		CommandLine cmd = null;
-		try {
-			cmd = parser.parse(options, args);
-		} catch (ParseException exp) {
-			System.err.println("Parsing failed. Reason: "+exp.getMessage());
-		}
-		//begin Interrogation Stage
-		String file = cmd.getOptionValue("inst");
-		if(file == null) {
-			System.err.println("error file name format");
-		}
-		String cutOffTime = cmd.getOptionValue("time");
-		String alg = cmd.getOptionValue("alg");
-		String seed = cmd.getOptionValue("seed");
+//		Options options = new Options();
+//		options.addOption("inst",true,"define the graph file to run algorithm");
+//		options.addOption("alg",true,"define the algorithm to solve problem");
+//		options.addOption("time",true,"cutoff time in seconds");
+//		options.addOption("seed",true,"random seed");
+//
+//		//CLi Parse Stage
+//		CommandLineParser parser = new DefaultParser();
+//		CommandLine cmd = null;
+//		try {
+//			cmd = parser.parse(options, args);
+//		} catch (ParseException exp) {
+//			System.err.println("Parsing failed. Reason: "+exp.getMessage());
+//		}
+//		//begin Interrogation Stage
+//		String file = cmd.getOptionValue("inst");
+//		if(file == null) {
+//			System.err.println("error file name format");
+//		}
+//		String cutOffTime = cmd.getOptionValue("time");
+//		String alg = cmd.getOptionValue("alg");
+//		String seed = cmd.getOptionValue("seed");
 		
 		//System.out.println("cutoff time "+cutOffTime+" alg "+alg+" seed: "+seed);  
 		 
 		//add test code here to run different algorithm
-		Graph g = parseFile(file);
-		Approx.solve(g);
+
+		int i = 0;
+		Graph a1 = parseFile(args[0]);//HC_MVC.HC(a1,args[0]);
+		Graph a2 = parseFile(args[1]);
+		Graph a3 = parseFile(args[2]);
+		Graph a4 = parseFile(args[3]);
+		Graph a5 = parseFile(args[4]);
+		Graph a6 = parseFile(args[5]);
+		Graph a7 = parseFile(args[6]);
+		Graph a8 = parseFile(args[7]);
+		Graph a9 = parseFile(args[8]);
+		Graph a10 = parseFile(args[9]);
+		Graph a11 = parseFile(args[10]);
+
+		for(i = 0; i < 5; i++){
+			HC_MVC.HC(a1,args[0]);
+		}
+		for(i = 0; i < 5; i++){
+			HC_MVC.HC(a2,args[1]);
+		}
+		for(i = 0; i < 5; i++){
+			HC_MVC.HC(a3,args[2]);
+		}
+		for(i = 0; i < 5; i++){
+			HC_MVC.HC(a4,args[3]);
+		}
+		for(i = 0; i < 5; i++){
+			HC_MVC.HC(a5,args[4]);
+		}
+		for(i = 0; i < 5; i++){
+			HC_MVC.HC(a6,args[5]);
+		}
+		for(i = 0; i < 5; i++){
+			HC_MVC.HC(a7,args[6]);
+		}
+		for(i = 0; i < 5; i++){
+			HC_MVC.HC(a8,args[7]);
+		}
+		for(i = 0; i < 5; i++){
+			HC_MVC.HC(a9,args[8]);
+		}
+		for(i = 0; i < 5; i++){
+			HC_MVC.HC(a10,args[9]);
+		}
+		for(i = 0; i < 5; i++){
+			HC_MVC.HC(a11,args[10]);
+		}
+
+//		System.out.println(g.getVertex(1).toString());
+//		System.out.println(g.getVertex(5).toString());
 		
 	}
 	

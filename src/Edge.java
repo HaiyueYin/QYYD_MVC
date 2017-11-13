@@ -48,6 +48,14 @@ public class Edge {
 		}
 		return false;
 	}
+
+	public Vertex getV1(){ //YHY
+		return this.v1;
+	}
+
+	public Vertex getV2(){  //YHY
+		return this.v2;
+	}
 	//print the edge
 	public String toString() {
 		return("Between vertex: "+v1.getId()+" and vertex: "+v2.getId());

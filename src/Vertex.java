@@ -7,6 +7,7 @@ public class Vertex {
 	 	private List<Vertex> adjacentVertex;
 	 	private List<Edge> adjacentEdge;
 	 	public int degree;
+	 	public boolean covered;
 	 	
 	 	public Vertex(int id) {
 	 		this.myId = id;
@@ -40,6 +41,10 @@ public class Vertex {
 	 	public int getId() {
 	 		return this.myId;
 	 	}
+
+	 	public int getDegree(){ // YHY
+	 		return this.degree;
+	 	}  //YHY
 	 	
 	 	@Override 
 	 	public String toString() {
