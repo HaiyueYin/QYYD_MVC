@@ -46,52 +46,65 @@ public class Solver {
 		//System.out.println("cutoff time "+cutOffTime+" alg "+alg+" seed: "+seed);  
 		 
 		//add test code here to run different algorithm
-
+		int cutoff = 600;
+		int randseed = 10000000;
 		int i = 0;
-		Graph a1 = parseFile(args[0]);//HC_MVC.HC(a1,args[0]);
-		Graph a2 = parseFile(args[1]);
+		Graph a1 = parseFile(args[1]);//HC_MVC.HC(a1,args[0]);
+		Graph a2 = parseFile(args[7]);
 		Graph a3 = parseFile(args[2]);
 		Graph a4 = parseFile(args[3]);
 		Graph a5 = parseFile(args[4]);
 		Graph a6 = parseFile(args[5]);
 		Graph a7 = parseFile(args[6]);
-		Graph a8 = parseFile(args[7]);
+		Graph a8 = parseFile(args[0]);
 		Graph a9 = parseFile(args[8]);
 		Graph a10 = parseFile(args[9]);
 		Graph a11 = parseFile(args[10]);
 
-		for(i = 0; i < 5; i++){
-			HC_MVC.HC(a1,args[0]);
+		for(i = 0; i < 1; i++){
+			HC_MVC.HCMVC(a1,args[1], randseed, cutoff);
+			HC_SA.HCSA(a1,args[1], randseed, cutoff);
 		}
-		for(i = 0; i < 5; i++){
-			HC_MVC.HC(a2,args[1]);
+		for(i = 0; i < 1; i++){
+			HC_MVC.HCMVC(a2,args[7], randseed, cutoff);
+			HC_SA.HCSA(a2,args[7], randseed, cutoff);
 		}
-		for(i = 0; i < 5; i++){
-			HC_MVC.HC(a3,args[2]);
+		for(i = 0; i < 1; i++){
+			HC_MVC.HCMVC(a3,args[2], randseed, cutoff);
+			HC_SA.HCSA(a3,args[2], randseed, cutoff);
 		}
-		for(i = 0; i < 5; i++){
-			HC_MVC.HC(a4,args[3]);
+		for(i = 0; i < 1; i++){
+			HC_MVC.HCMVC(a4,args[3], randseed, cutoff);
+			HC_SA.HCSA(a4,args[3], randseed, cutoff);
 		}
-		for(i = 0; i < 5; i++){
-			HC_MVC.HC(a5,args[4]);
+		for(i = 0; i < 1; i++){
+			HC_MVC.HCMVC(a5,args[4], randseed, cutoff);
+			HC_SA.HCSA(a5,args[4], randseed, cutoff);
 		}
-		for(i = 0; i < 5; i++){
-			HC_MVC.HC(a6,args[5]);
+		for(i = 0; i < 1; i++){
+			HC_MVC.HCMVC(a6,args[5], randseed, cutoff);
+			HC_SA.HCSA(a6,args[5], randseed, cutoff);
 		}
-		for(i = 0; i < 5; i++){
-			HC_MVC.HC(a7,args[6]);
+		for(i = 0; i < 1; i++){
+			HC_MVC.HCMVC(a7,args[6], randseed, cutoff);
+			HC_SA.HCSA(a7,args[6], randseed, cutoff);
 		}
-		for(i = 0; i < 5; i++){
-			HC_MVC.HC(a8,args[7]);
+		for(i = 0; i < 1; i++){
+			HC_MVC.HCMVC(a8,args[0], randseed, cutoff);
+			HC_SA.HCSA(a8,args[0], randseed, cutoff);
 		}
-		for(i = 0; i < 5; i++){
-			HC_MVC.HC(a9,args[8]);
+		for(i = 0; i < 1; i++){
+			HC_MVC.HCMVC(a9,args[8], randseed, cutoff);
+			HC_SA.HCSA(a9,args[8], randseed, cutoff);
 		}
-		for(i = 0; i < 5; i++){
-			HC_MVC.HC(a10,args[9]);
+		for(i = 0; i < 1; i++){
+			HC_MVC.HCMVC(a10,args[9], randseed, cutoff);
+			HC_SA.HCSA(a10,args[9], randseed, cutoff);
 		}
-		for(i = 0; i < 5; i++){
-			HC_MVC.HC(a11,args[10]);
+		for(i = 0; i < 1; i++){
+			HC_MVC.HCMVC(a11,args[10], randseed, cutoff);
+			HC_SA.HCSA(a11,args[10], randseed, cutoff);
+//			HC_SA.HCSA(a8,args[0], randseed, cutoff);//run test.graph
 		}
 
 //		System.out.println(g.getVertex(1).toString());
