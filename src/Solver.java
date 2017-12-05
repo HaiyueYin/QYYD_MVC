@@ -16,6 +16,11 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 
 
+//Author: all team members
+//togather we write out a main class and make sure it's easy to use for all of us.
+//thanks to Cong Du for adding the parameters parsing code and file reading function.
+
+
 public class Solver {
 	public static void main(String[] args) throws IOException {
 		

@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-//@author: saka
+//@author: Cong Du
 //inside this class is the heuristic solution
 //we implement the very easy to code ListLeft algorithm provided by reference [4]
 

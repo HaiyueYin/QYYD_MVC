@@ -8,6 +8,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Stack;
 
+
+//Author: Yunwei Qiang, Bowen Yang
+//initial implementation of BnB algorithm
+
+
 class BnB{
 	private int upperBound;
 	private int lowerBound;

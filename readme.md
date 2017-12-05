@@ -8,6 +8,9 @@ Four Algorithms are implemented
   * Local Search using Hill Climbing policy
   * Local Search using Simulated Annealing policy
 
+## Structure
+Solver contains the Main class and the util to readFile, SolutionRecorder is the singleton class handles output job. Vertex, Edge and Graph are classes and are populated during input reading precedure. BnBClone, Approx, LocalSearch implement different algorithms. 
+
 ## Run program
 in this directory, open a shell and use the following command:
 

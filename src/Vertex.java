@@ -1,6 +1,11 @@
 
 import java.util.List;
 import java.util.ArrayList;
+
+
+//Author: all team members
+//together we figure out a data structure for Vertex and make sure it's easy to use for all of us.
+
 public class Vertex implements Comparable<Vertex> {
 	//private static int id = 0;
 	 	public int myId;

@@ -6,7 +6,10 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Random;
 
-//warning: this method use g.vertexCovered to denote current vc condition, vertex.covered is unchanged!!!
+
+// Author: Haiyun Yin
+// Local Search algorithm implmentations by Hill Climbing and Simulated Annealing.
+// Thanks to Cong Du for code refactoring.
 public class LocalSearch {
 	private Graph g;
 	private long cutoffTime;

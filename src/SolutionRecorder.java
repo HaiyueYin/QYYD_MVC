@@ -3,6 +3,10 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 	
+
+// author: Cong Du
+// a utility to save trace files and sol files. singleton class, at each run there is only one SolutionRecorder, and initialized at
+// the very beginning using input parameters.
 public class SolutionRecorder {
 	private static final SolutionRecorder sr = new SolutionRecorder();
     private  String currDir = System.getProperty("user.dir");

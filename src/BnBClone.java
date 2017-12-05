@@ -10,6 +10,8 @@ import java.util.Collections;
 import java.util.Stack;
 import java.util.TreeSet;
 
+//Author: Yunwei Qiang, Bowen Yang, Cong Du
+//a reimplementation of BnB algorithm, using the same algorithm but change data structure to TreeMap.
 class BnBClone{
 	private int upperBound;
 	private int currentLayer;

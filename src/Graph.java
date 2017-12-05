@@ -4,6 +4,8 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.ArrayList;
 
+//Author: all team members
+//together we figure out a data structure for Graph and make sure it's easy to use for all of us.
 
 public class Graph {
 	public List<Vertex> vertexList;

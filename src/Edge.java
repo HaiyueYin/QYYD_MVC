@@ -1,4 +1,7 @@
 
+//Author: all team members
+//together we figure out a data structure for Graph and make sure it's easy to use for all of us.
+
 public class Edge {
 	
 	private Vertex v1;

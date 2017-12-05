@@ -5,6 +5,9 @@ import scpsolver.problems.LPSolution;
 import scpsolver.problems.LPWizard;
 import scpsolver.problems.LPWizardConstraint;
 
+// @author:Cong Du
+// a utility to get VC lower bound of graph through linear programming
+// a library SCPSolver is used
 
 public class LBUtil {
 	
